@@ -14,14 +14,19 @@ function draw() {
   background(200);
   
   push(); // create a new temporary drawing layer
-  translate(0, 0); // change these arguments
+  translate(200, 150); // change these arguments
   
   //add an if() statement here
+    if(mouseIsPressed) {
+      rotate(PI/2)
+    } else{
+      rotate(0);
+    }
   
   line(0, -50, 40, -20);
   line(0, -50, -40, -20);
   fill(255);
-  ellipse(0, 0, 55);
+  ellipse(0, 0, 55); //bottom circle
   ellipse(0, -35, 40);
   ellipse(0, -60, 30);
   fill(0);
